@@ -1,0 +1,598 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	background: #DAFBEC;
+	color: black;
+}
+a {
+    color:rgb(41, 121, 38);
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    
+    color: yellow;
+}
+
+a:active {
+    transition: all 0.11s ease;
+    color: rgb(95, 231, 90);
+}
+
+#main-header {
+
+	background-size: cover;
+	background-position: center center;
+    display: flex;
+    text-align: center;
+    height:700px;
+    
+}
+
+#nextimg {
+
+	border: 1px solid cyan;
+}
+
+#main-header p {
+    font-weight: 300;
+	font-size: 100px;
+	line-height: 1em;
+	padding: 0.1em 1em 0 1em;
+	color: #69f575;
+    text-align: center;
+    font-family: 'UnifrakturCook', cursive;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+#sec p {
+
+    float:left;
+    margin-right: 10px;
+}
+
+body.total #main-header {
+    background-image: url("../images/Pandachengdu.jpg");
+}
+
+/* MainMenu */
+
+#main-menu {
+	background-color: #F1FEE9;
+
+}
+
+#main-menu ul {
+	padding: 0.5em 0;
+	text-align: center;
+	
+}
+
+
+
+#main-menu p {
+	display: inline-block;
+	color: green;
+	text-decoration: none;
+	padding: 0.25em 1em;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+	font-family: 'Limelight', cursive;
+
+    
+
+}
+
+div img {
+
+    width: 500px; height:300px;
+}
+
+#water {
+
+    float: right;
+
+}
+
+#page-footer {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid cyan;
+    display: inline-block;
+	font-family: 'Pattaya', sans-serif;
+	text-align: center;
+	color: rgb(41, 121, 38);;
+
+}
+/* treehouse */
+
+
+#treehousename {
+    font-weight: 300;
+	font-size: 100px;
+	line-height: 1em;
+	padding: 0.1em 1em 0 1em;
+	color: #69f575;
+    text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+
+#tree-footer {
+    margin-top: 100px;
+    width: 100%;
+    border: 1px solid cyan;
+    display: inline-block;
+	font-family: 'Pattaya', sans-serif;
+    text-align: center;
+	color: rgb(41, 121, 38);;
+}
+
+
+#tree-image img {
+
+    width: 100%; 
+	height:50%;
+}
+
+.houseinfo {
+
+	line-height: 2em;
+	padding: 0.1em 1em 0 1em;
+	color: #0ca15e;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+	
+}
+
+.infobod {
+	border: 1px solid cyan;
+
+}
+
+/* waterhouse */
+
+
+#waterhousename {
+    font-weight: 300;
+	font-size: 100px;
+	line-height: 1em;
+	padding: 0.1em 1em 0 1em;
+	color: #69f575;
+    text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+
+#water-footer {
+    margin-top: 100px;
+    width: 100%;
+    border: 1px solid cyan;
+    display: inline-block;
+	font-family: 'Pattaya', sans-serif;
+	text-align: center;
+	color: rgb(41, 121, 38);;
+}
+#water-image img {
+
+    width: 100%; 
+	height:40%;
+}
+
+
+/* glasshouse */
+
+#glasshousename {
+    font-weight: 300;
+	font-size: 100px;
+	line-height: 1em;
+	padding: 0.1em 1em 0 1em;
+	color: #69f575;
+    text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+
+#glass-footer {
+    margin-top: 100px;
+    width: 100%;
+    border: 1px solid cyan;
+    display: inline-block;
+	font-family: 'Pattaya', sans-serif;
+	text-align: center;
+	color: rgb(41, 121, 38);;
+}
+#glass-image img {
+
+    width: 100%; 
+	height:50%;
+}
+
+
+/* Book */
+
+
+#bookname {
+    font-weight: 300;
+    font-size:50px;
+	line-height: 2em;
+	padding: 0.1em 1em 0 1em;
+	color: #0ca15e;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+
+#book-footer {
+    margin-top: 100px;
+    width: 100%;
+    border: 1px solid cyan;
+    display: inline-block;
+	font-family: 'Pattaya', sans-serif;
+	text-align: center;
+	color: rgb(41, 121, 38);;
+}
+
+.bookcheck {
+
+    float: right;
+}
+
+#bookinfo {
+
+
+	line-height: 1em;
+	padding: 0.1em 1em 0 1em;
+	color: #0ca15e;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+
+fieldset .form-item {
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+fieldset .form-item > label {
+	color: #0ca15e;
+    font-weight: bold;
+    width: 60%;
+    padding-right: 2em;
+    text-align: right;
+    text-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
+}
+
+fieldset .form-item .form-element {
+    width: 75%;
+}
+
+
+
+/* Other */
+#bookbookbuttom {
+
+	font-size: 50px;
+	line-height: 1em;
+	padding: 0.1em 1em 0 1em;
+	color: #0ca15e;
+	display:flex;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+
+}
+.bookbuttom {
+
+	font-size: 50px;
+	line-height: 1em;
+	padding: 0.1em 1em 0 1em;
+	color: #0ca15e;
+	display:flex;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+
+}
+.buttom {
+	display: flex;
+	justify-content: center;
+
+}
+
+.pdiv2 {
+	float: right;
+	width: 50%;
+	height: 33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 3em;
+	margin-left: auto;
+}
+
+.pdiv1 {
+	float: left;
+	width: 50%;
+	height: 33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 3em;
+
+}
+.intro {
+
+	font-size: 40px;
+	font-family: 'Limelight', cursive;
+
+}
+
+.menu-div{
+	width: 25%;
+	float: left;
+	padding-top: 15px;
+}
+
+.menu-a{
+	margin-left: 40%;
+	font-size: large;
+	cursor: pointer;
+}
+
+
+
+#pac-menu {
+
+	font-family: 'Limelight', cursive;
+
+}
+
+
+/* animation */
+.bird img{
+
+	height: 40%;
+	width: 20%;
+	position: absolute;
+
+}
+
+#birdRight img {
+	top: 0%;
+	left: -250px;
+	animation-name:birdRight ;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#birdLeft img {
+	top: 50%;
+	left: 100%;
+	animation-name:birdLeft ;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes birdRight {
+	0%{
+		top: 10%;
+		left: -250px;
+
+	}
+	100%{
+
+		left:100%;
+		top: 0%;
+
+	}
+
+
+}
+@keyframes birdLeft {
+	0%{
+		top: 50%;
+		left: 100%;
+
+	}
+	100%{
+		top: 50%;
+		left:-250px;
+
+	}
+
+
+}
+
+.footerstyle {
+
+	height: 50px;
+	width: 95%;
+	margin-left: 2%;
+}
+
+.mainimgstyle {
+
+
+	height: 900px;
+	margin-top: 30px;
+}
+
+.pacstyle {
+
+	height: 50px;
+	width: 95%;
+	margin-left: 2%;
+}
+
+.logostyle {
+
+	height: 50px;
+}
+
+.activities {
+
+	line-height: 2em;
+	padding: 0.1em 1em 0 1em;
+	color: #0ca15e;
+    text-align: left;
+    font-family: 'Krona One', sans-serif;
+	width: 500px;
+	float: left;
+	margin-left: 50px;
+
+}
+
+.food {
+
+	line-height: 2em;
+	padding: 0.1em 1em 0 1em;
+	color: #0ca15e;
+    text-align: left;
+    font-family: 'Krona One', sans-serif;
+	width: 500px;
+	float: right;
+
+
+
+}
+
+.first {
+
+
+	font-size: 2em;
+}
+
+
+#slides {
+	box-sizing:border-box;
+
+}
+
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 600px;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+.Imgstyle {
+
+
+	width:100%
+}
+
+#textcheck {
+text-align: center;
+
+}
+
+#more {
+	display: none;
+}
+
+#slideimg img {
+
+	height: 600px;
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DECO1400Web inplementation draft</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="book">
+        <nav id="main-menu">
+			<div class="logostyle">
+                <p style="float: left;margin-left: 5%;margin-top: 12px;">Logo</p>
+                <p style="float: right;margin-right: 5%;;margin-top: 12px;">Sign up/Log in</p>
+            </div>
+		</nav>
+        <nav id="pac-menu">
+			<div class="pacstyle">
+                <div class="menu-div"><a class="menu-a" href="treehouse.html">TreeHouse</a></div>
+                <div class="menu-div"><a class="menu-a" href="underwater.html">UnderwaterHouse</a></div>
+                <div class="menu-div"><a class="menu-a" href="glass.html">GlassHouse</a></div>
+                <div class="menu-div"><a class="menu-a" href="book.html">Book</a></div>
+
+            </div>
+		</nav>
+        <!-- <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/Pandachengdu.jpg" alt="main pic" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/kangroo.jpeg" alt="kangroo pic" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/treehouse.jpg" alt="treehouse pic" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+ 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div> -->
+          <!-- Slideshow container -->
+<!-- Slideshow container -->
+<div id="slides">
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides change" id="slideimg">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/Pandachengdu.jpg" alt="main pic" class="Imgstyle">
+
+        </div>
+        
+        <div class="mySlides change" id="slideimg">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/kangroo.jpeg" alt="kangroo pic" class="Imgstyle">
+
+        </div>
+        
+        <div class="mySlides change" id="slideimg">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/treehouse.jpg" alt="treehouse pic" class="Imgstyle">
+
+        </div>
+    
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+
+        <header id="book-header">
+            <section id="BookIntro">
+                <article>
+                    <p id="bookname">Book</p>
+                    <p id="bookinfo">Please select the number of rooms you would like to live 
+                        in and the corresponding number of activities and special food.</p>
+    
+                </article>
+            </section>
+            <section>
+                <fieldset>
+    
+                    <legend>
+                        Your Details
+                    </legend>
+    
+                    <div class="form-item">
+                        <label for="form-full-name">Name:</label>
+                        <div class="form-element">
+                            <input type="text" name="full_name" id="form-full-name" placeholder="First and last names" />
+                        </div>
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="form-state">Room:</label>
+                        <div class="form-element">
+                            <select name="form-state">
+                                <option>TreeHouse</option>
+                                <option>UnderWaterHouse</option>
+                                <option>GlassHouse</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="form-full-name">How many people do u have:</label>
+                        <div class="form-element">
+                            <input type="text" name="num_people" id="form-full-people" placeholder="Numbers of people" />
+                        </div>
+                    </div>
+    
+
+                    <div class="form-item">
+                        <label for="form-phone">Phone:</label>
+                        <div class="form-element">
+                            <input type="text" name="phone" id="form-phone" placeholder="Phone number including area code" />
+                        </div>
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="form-email">Email:</label>
+                        <div class="form-element">
+                            <input type="text" name="email" id="form-email" placeholder="Must be a valid email address" />
+                        </div>
+                    </div>
+    
+                    <div class="form-item">
+                        <label>Special Food&Activities:</label>
+                        <div class="form-element">
+                            <label for="form-food">
+                                <input type="checkbox" id="myCheck" onclick="myFunction()" name="food"> Food
+                            </label>
+                            <label for="form-actv">
+                                <input type="checkbox" id="form-act" onclick="myFunction()" name="activ"> Activities
+                            </label>
+                        </div>
+                        
+                    </div>
+                    <p id="textcheck" style="display:none">Checkbox is CHECKED!</p>
+                </fieldset>
+                </section>
+            <div class="buttom">
+
+                <button id="bookbookbuttom" onclick="javascript:alert('Here is your bill!')">Check out</button>
+            </div>
+     
+        </header>
+
+
+        <footer id="book-footer">
+			
+            <nav id="footer">
+                <div  class="footerstyle">
+                    <div class="menu-div">Email: rareanimals@gmail.com</div>
+                    <div class="menu-div">Address: The mysterious forest No.1</div>
+                    <a class="menu-div" href="reference.html">#Copy right&reference</a>
+                    <a class="menu-div" href="index.html">Back To The Main Page</a>
+                </div>
+            </nav>
+
+		</footer>
+        <script src='js/js.js'>
+        </script>
+    </body>
+
+</html>

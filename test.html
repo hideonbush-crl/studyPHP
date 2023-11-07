@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简单论坛搜索</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .search-box {
+    margin: 20px 0;
+  }
+  .forum-post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="搜索论坛...">
+  <button onclick="searchPosts()">搜索</button>
+</div>
+
+<div id="forumPosts">
+  <div class="forum-post" data-title="如何学习编程">如何学习编程</div>
+  <div class="forum-post" data-title="最佳的前端框架">最佳的前端框架</div>
+  <div class="forum-post" data-title="后端开发的未来">后端开发的未来</div>
+  <!-- 更多帖子... -->
+</div>
+
+<script>
+function searchPosts() {
+  var input, filter, posts, title, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  posts = document.getElementById("forumPosts").getElementsByClassName("forum-post");
+
+  for (i = 0; i < posts.length; i++) {
+    title = posts[i].getAttribute("data-title");
+    txtValue = title;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      posts[i].style.display = "";
+    } else {
+      posts[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
